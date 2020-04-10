@@ -1,0 +1,36 @@
+{
+    "name": "prod2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "client.js",
+    "directories": {
+        "example": "example"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack --watch",
+        "build": "webpack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://interhub:338Voenkaa@github.com/interhub/interhub.github.io.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/interhub/interhub.github.io/issues"
+    },
+    "homepage": "https://github.com/interhub/interhub.github.io#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "http": "0.0.1-security",
+        "jquery": "^3.4.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.3",
+        "webpack": "^4.42.1",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.10.3"
+    }
+}
