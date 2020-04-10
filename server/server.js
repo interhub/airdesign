@@ -5,7 +5,7 @@ const app = express();
 
 app.get("/message/:txt", (req, res, next) => {
     var txt = decodeURIComponent(req.params.txt);
-    fs.appendFile("../prod2/client_info/client_info.txt", `${txt} \n ---- ${new Date().toLocaleString()} \n\n`, (err) => {
+    fs.appendFile("../client_info/client_info.txt", `${txt} \n ---- ${new Date().toLocaleString()} \n\n`, (err) => {
         if (err) {
             return console.error(err);
         }
