@@ -2,14 +2,11 @@ const fs = require("fs");
 const PORT = require("./port.js");
 const express = require("express");
 const app = express();
+const mail_config = require("./mail_config.js");
 
 app.get("/message/:txt", (req, res, next) => {
     var txt = decodeURIComponent(req.params.txt);
-    fs.appendFile("../client_info/client_info.txt", `${txt} \n ---- ${new Date().toLocaleString()} \n\n`, (err) => {
-        if (err) {
-            return console.error(err);
-        }
-    })
+    mail_config(txt)
     console.log(txt);
 })
 
